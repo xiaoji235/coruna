@@ -164,12 +164,12 @@ coruna-main/
 ├── utility_module.js               # Crypto helpers, Int64, LZW
 ├── Stage3_VariantB.js              # Sandbox escape + MachOPayloadBuilder
 ├── other/
-│   └── bootstrap.dylib             # Extracted dylib with ChaCha20 + LZMA
 ├── downloaded/                     # 17 files fetched from C2 server
 │   └── <hash>.min.js               # Raw encrypted payloads
 ├── extracted/                      # Base64-decoded qbrdr payloads (from repo JS files)
 │   └── <hash>.bin
 └── payload/                        # All 19 decrypted + decompressed F00DBEEF containers
+    ├── bootstrap.dylib             # Bootstrap dylib to validate and load other dylibs
     ├── 7a7d...payload              # Decrypted manifest (F00DBEEF with 19 download entries)
     ├── <hash>.bin                  # F00DBEEF container
     └── <hash>/                     # Extracted entries per container
