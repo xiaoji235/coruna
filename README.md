@@ -6,6 +6,9 @@ Partially deobfuscated, symbolicated, and modified to load decrypted payloads by
 
 These scripts are modified in a way that allows you to host them locally. Note that this only includes exploit chains for tested devices.
 
+## Analysis
+There are so many analysis by other people right now so I'm not doing it again, however I have a generated [ANALYSIS.md](ANALYSIS.md) specifically talking about decryption process and iOS payloads version table.
+
 ## Tested on
 | Device| Version | WebKit exploit chain |
 | :--- | --- | --- |
